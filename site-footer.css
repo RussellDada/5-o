@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 50px; */
+    /* margin: 0px 300px 600px 300px; */
+    margin: 50px 180px;
+    font-size: 14px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    
+}
+
+/* .footer-about {
+    margin: 0px 300px 200px 300px;
+    
+} */
+

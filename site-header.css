@@ -1,0 +1,102 @@
+header {
+    background: linear-gradient(to right, #8000FF, #F50179 );
+    min-height: 350px;
+    padding-left: 180px;
+    padding-right: 180px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+    /* padding-top: 5%; */
+}
+
+.header-logo {
+    max-width: 120px; 
+    /* height: auto;  */
+    width: 100%; 
+    /* align-self: center;  */
+    margin-top: 20px;
+
+    order: 1;
+    align-self: center;
+}
+
+.header-alltext {
+    width: 100%; 
+    text-align: center;
+    color: white;
+}
+.header-ptext {
+    margin: 0px auto 0 auto; /* Only affects header p */
+    /* margin: 0; */
+    /* padding: 0px 75px;  */
+    color: white;
+    /* padding: 0 120px; */
+}
+.header-h1ext {
+    margin: 0px auto 0 auto; /* Only affects header p */
+    /* margin: 0; */
+    /* padding: 0px 75px;  */
+    color: white;
+    /* padding: 0 90px; */
+}
+
+.header-text-container {
+
+    width: 100%; /* Force this container to take its own row */
+    order: 3;    /* Appear below the logo/nav */
+    text-align: center;
+    margin-top: 15px; /* Adjust this to push the text lower down */
+    padding: 0 120px;
+
+    /* display: flex; */
+    /* flex-direction: column; Stack h1 and p vertically */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex: 1; This makes the text container take up the middle space */
+    /* text-align: center; */
+    /* padding: 0 20px; */
+}
+
+
+/* Keep logo and nav on the sides */
+/* .header-logo { */
+    /* order: 1; Logo first */
+/* } */
+
+/* nav { */
+    /* order: 3; Nav last */
+/* } */
+
+/* header > h1 { */
+    /* order: 2; h1 in middle */
+    /* width: calc(100% - 400px);  */
+    /* margin: 0 auto; Centers the narrowed box */
+    /* text-align: center; */
+/* } */
+
+/* header > p { */
+    /* order: 4; p after h1 */
+    /* width: calc(100% - 400px);  */
+    /* margin-bottom: 1px; */
+/* } */
+
+
+
+/* .header-centring {
+    font: 'Roboto Regular';
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0; */
+    /* display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
+    /* color: white;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+} */

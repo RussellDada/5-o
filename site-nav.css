@@ -1,0 +1,38 @@
+nav {
+    margin-top: 60px; 
+    display: flex;
+    align-items: center; /* Center nav items vertically within nav */
+    font-size: 20px;
+
+    order: 2;
+    /* align-self: center; */
+    width: max-content;
+
+    border-bottom: 1px solid white;
+    padding-bottom: 1px; 
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none !important;
+    padding-left: 0px; 
+    padding-right: 0px; 
+    
+    margin-right: 40px;
+
+    padding-bottom: 5px;       /* Adds space between the text and the line */
+    /* border-bottom: 1px solid white; The thin white line */
+
+    display: inline-block; /* Ensures the border wraps the text tightly */
+}
+
+.nav-btn.active {
+    text-decoration: none !important;
+    border-bottom: 3px solid white; /* 3x the thickness (1px * 3 = 3px) */
+    margin-bottom: -1px; 
+    padding-bottom: 3px;
+}
+
+.nav-btn:last-child {
+    margin-right: 0;
+}

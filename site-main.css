@@ -1,0 +1,237 @@
+main {
+    position: relative;
+    top: -30px; 
+    z-index: 10; 
+    margin: 50px 180px; 
+    margin-top: -10px;
+    background: white; 
+    padding: 40px;
+    border-radius: 10px; 
+    border: 5px;
+    box-shadow: 10px 10px 20px rgba(30, 29, 29, 0.904);
+
+}
+
+.row {
+    margin: 10px 0;
+    display: flex;
+}
+/* .row-home {
+    border-top: 5px solid grey;
+} */
+
+.row-ask {
+    display: flex;
+    justify-content: space-between; /* Pushes items to the edges */
+    align-items: center;            /* Vertically aligns the text and button */
+    width: 100%;                    /* Ensures it spans the full box width */
+}
+
+
+.column {
+    margin: 0 5px;
+    flex: 1;
+}
+.column-with-text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Keeps items stacked vertically */
+    align-items: center;    /* Centers items (including buttons) horizontally */
+    /* text-align: center;      */
+}
+.column-with-media {
+    padding: 0 10px;
+}
+.column-size-double {
+    flex: 2;
+}
+
+.image-for-twocols-by-tworows-box {
+    max-width: 120px; 
+    /* height: auto;  */
+    width: 100%; 
+    /* margin-top: 20px; */
+    margin: 20px auto 0 auto;
+    display: block
+    
+    /* order: 1; */
+    /* align-self: center; */
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer; /* Changes the arrow to a pointing hand */
+    transition: all 0.2s ease; /* Smooths out the changes below */
+}
+/* button:hover {
+    background-color: #8000FF;
+    color: white;
+} */
+button:active {
+    transform: translateY(2px); /* Moves the button down 2 pixels */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds an internal shadow */
+}
+.button-ask {
+    color: white;
+    background-color: #8900FF;
+    border: #8900FF solid 1px;
+
+}
+.button-visit {
+    color: #8900FF;
+    background-color:  white;
+    border: #8900FF solid 1px;
+}
+.button-ask:hover {
+    background-color: white;
+    color: #8900FF;
+}
+.button-visit:hover {
+    background-color: #8900FF;
+    color: white;
+}
+
+
+hr.dotted-line {
+    /* 1. Remove the default gray 'box' look */
+    border: none;
+    height: 0;
+
+    /* 2. Set the dotted line (Thickness, Style, Color) */
+    /* Change #000000 to any hex code to change the color */
+    border-top: 3px dotted #9f9797dc; 
+
+    /* 3. Add spacing so it doesn't touch the rows */
+    margin: 20px 0;
+    margin-left: -40px;
+    margin-right: -40px;    
+    
+    /* 4. Ensure it spans the full width of the 'main' box */
+    /* width: 100%; */
+    /* Reset the width to auto so the negative margins can expand it */
+    width: auto;
+}
+
+
+form {
+    width: 100%;
+}
+#message {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 10px;
+    /* border-top: 0px; 
+    border-left: 0px; 
+    border-bottom: 5px solid rgba(79, 49, 212, 0.849); 
+    border-right: 0px;
+    font-size: 40px; */
+}
+
+
+/* tabs stuff */
+
+.planet-details {
+    display: none;
+}
+
+/* class added/removed by JavaScript */
+.planet-details.currently-selected-planet {
+    display: flex;
+    align-items: flex-start;
+}
+
+.planet-buttons {
+    display: flex;
+    gap: 0px;            
+    padding-left: 0px;  
+}
+
+/* 2. The Individual Tab */
+.planet-button {
+    padding: 10px 25px;
+    cursor: pointer;
+    color: grey;
+    /* background: #e0e0e0; Grey for unselected tabs */
+    background: white;
+    border: 0px ;
+    border-bottom: none; /* Removes bottom border so it sits on the content */
+    border-radius: 0px 10px 0 0; /* Rounds only the TOP corners */
+    font-family: inherit;
+    transition: background 0.3s;
+    position: relative;
+    z-index: 1;         /* Keeps tabs above the content box border */
+}
+
+/* 3. The "Active" Tab (The one on top) */
+.planet-button.currently-selected-button {
+    color: black;
+    background: white;   /* Matches your main content background */
+    border: 1px solid #ccc;
+    border-bottom: 2px solid white; /* Matches background to "open" the folder */
+    margin-bottom: -2px; /* Pulls the tab down to cover the content's border */
+    /* font-weight: bold; */
+    z-index: 3;          /* Ensures it stays on top */
+}
+
+/* 4. The Content Box (The "Folder") */
+.planet-details {
+    padding: 30px;
+    background: white;
+    border-radius: 0 10px 10px 10px; /* Round all corners except top-left */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.planet-details.currently-selected-planet {
+    display: flex;
+    flex-direction: column; /* This stacks image on top, text on bottom */
+    align-items: center;    /* Centers the image and text horizontally */
+}
+.planet-hero-image {
+    width: 100%;           /* Makes image fill the width of the box */
+    max-width: 100%;       /* Ensures it doesn't overflow */
+    height: auto;          /* Maintains aspect ratio so it isn't squished */
+    border-radius: 5px;    /* Optional: adds a slight round to the image corners */
+    margin-bottom: 20px;   /* Adds space between the photo and the text */
+}
+.planet-content-2cols {
+    column-count: 2;
+    column-gap: 20 px;
+    text-align: justify;
+    margin-top: 0px;
+    width: 100%;
+}
+.planet-content-2cols p {
+    break-inside: avoid;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+
+.label-shop {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Adds some breathing room below the search bar */
+}
+.search {
+    width: 75%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+.search-button {
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* ... your other button styles ... */
+}

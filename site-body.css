@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    padding-bottom: 100px; /* Ensure space for footer */
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif; /* This is the correct way */
+}
+h1 {
+    /* font: 'Roboto Regular'; */
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    /* display: flex; */
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center;  */
+    color: white;
+    padding: 0px; 
+
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+p {
+    /* font: 'Roboto Regular'; */
+    font-size: 14px;
+    line-height: 20px;
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: center;  */
+    /* color: white; */
+
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+h1.header-alltext, 
+p.header-ptext {
+    position: static;   /* Ensures they stay inside the header container */
+    transform: none;    /* Removes any leftover centering math */
+    margin: 10px 0;     /* Gives a little breathing room between the h1 and p */
+    color: white;       /* Keeps your text visible against the gradient */
+    width: 100%;        /* Ensures they take up the full middle width for centering */
+}
+
+
+h2 {
+    /* font: 'Roboto Regular'; */
+    font-size: 32px;
+    line-height: 40px;
+}
+h3 {
+    /* font: 'Roboto Regular'; */
+    font-size: 18px;
+    line-height: 24px;
+    margin: 3px;
+}
+h3.purple {
+    color: #8000FF !important;
+}
+h4 {
+    /* font: 'Roboto Regular'; */
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-home-2ndrow {
+    font-size: 18px;
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* This forces the h3 and p to the left edge */
+}
+
+.text-ask {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
